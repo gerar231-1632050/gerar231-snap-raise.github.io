@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="drag-resize-organize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="interact.js">
+    </script>
+    <script src="drag-resize-organize.js"></script>
+</head>
+
+<body id="body">
+    <div id="to-do-area">
+        <header>
+            <h1> DRAG! RESIZE! ORGANIZE! </h1>
+            <p style="right: 0; position: absolute;"> powered by <img src="https://snap-raise.com/assets/logo_full_extrasm-79b9e706d6d4a893f0908a430f87cfb5.png"> </p>
+        </header>
+        <button class="toolbox" id="create" onclick="createToDo();"> <img src="Add_96px_1.png" onmouseout="hoverChange(this, 'Add_96px_1.png');" onmouseover="hoverChange(this, 'Add_96px_2.png');"> </button>
+        <div class="to-do-item" id="to-do" style="display: none;">
+            <textarea class="to-do-title" placeholder="New to-do item" rows="1"></textarea>
+            <textarea class="to-do-input" placeholder="Add details here..." rows="3"></textarea>
+            <div class="control-panel">
+                <div onmouseover="paletteShow(getParent(this,2).id);" onmouseout="paletteHide(getParent(this,2).id);" style="display: inline;">
+                    <div class="color-palette">
+                        <svg height="34" width="174">
+                            <circle cx="17" cy="17" r="15" stroke="#bfbfbf" stroke-width="2" fill="#ff0000" onclick="changeColor(getParent(this,5).id, '#ff0000');"></circle>
+                            <circle cx="52" cy="17" r="15" stroke="#bfbfbf" stroke-width="2" fill="#40ff00" onclick="changeColor(getParent(this,5).id, '#40ff00');"></circle>
+                            <circle cx="87" cy="17" r="15" stroke="#bfbfbf" stroke-width="2" fill="#00c4ff" onclick="changeColor(getParent(this,5).id, '#00c4ff');"></circle>
+                            <circle cx="122" cy="17" r="15" stroke="#bfbfbf" stroke-width="2" fill="#0000ff" onclick="changeColor(getParent(this,5).id, '#0000ff');"></circle>
+                            <circle cx="157" cy="17" r="15" stroke="#bfbfbf" stroke-width="2" fill="#bf00ff" onclick="changeColor(getParent(this,5).id, '#bf00ff');"></circle>
+                        </svg>
+                    </div><img src="Paint%20Palette_96px.png" class="color-change"></div><img src="Info_96px_1.png" onclick="closeDescription(getParent(this,2).id);" class="expand-btn"><img src="Ok_96px_1.png" onclick="crossOut(getParent(this,2).id);" class="check-mark"> <img src="Delete_96px_4.png" class="trash-can" onclick="removeToDo(getParent(this,2).id);" onmouseover="hoverChange(this,'Delete_96px_3.png');" onmouseout="hoverChange(this, 'Delete_96px_4.png');"></div>
+        </div>
+    </div>
+</body>
+
+</html>

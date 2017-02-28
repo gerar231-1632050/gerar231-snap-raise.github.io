@@ -1,0 +1,164 @@
+@import url('https://www.fontify.me/wf/1f5b58e61255354ae231bf19d18c708a');
+
+@font-face {
+    font-family: Gill-Sans;
+    src: url(GillSansMTStd-Book.otf);
+}
+
+body {
+    background: #006b8f url(https://snap-raise.com/assets/landing_bkgrd.png) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-width: 764px;
+}
+
+h1 {
+    font-family: font116557;
+    color: white;
+    margin: inherit;
+    font-size: 100;
+    display: inline;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    margin: auto;
+}
+
+p {
+    font-family: Gill-Sans;
+    color: white;
+    margin: inherit;
+    display: inline;
+}
+
+.toolbox {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    width: 5%;
+    margin: 5px;
+    min-width: 50px;
+    margin-left: 0px;
+}
+
+.toolbox img {
+    width: 100%;
+    height: 100%;
+}
+
+.toolbox:hover {
+    cursor: pointer;
+}
+
+#to-do-area {
+    width: 100%;
+    height: 97.5vh;
+    display: inline-block;
+}
+
+.to-do-item {
+    border: 1px solid #bfbfbf;
+    background-color: #00c4ff;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    margin: 0px;
+    min-width: 175px;
+    min-height: 105px;
+    width: 175px;
+    position: absolute;
+    left: 0;
+    top: 120px;
+    padding: 5px;
+}
+
+.to-do-title {
+    font-family: font116557;
+    font-size: 1.5em;
+    width: 95%;
+    height: 30px;
+    outline: none;
+    margin: 5px;
+    background: transparent;
+    border: none;
+    resize: none;
+    overflow: hidden;
+    cursor: move;
+    display: block;
+}
+
+.to-do-input {
+    font-family: Gill-Sans;
+    font-size: 1em;
+    width: 95%;
+    min-width: 50px;
+    min-height: 50px;
+    height: 50%;
+    margin: 5px;
+    z-index: 5;
+    outline: none;
+    background: transparent;
+    border: none;
+    resize: none;
+    cursor: move;
+    display: block;
+}
+
+.expand-btn {
+    width: 30px;
+    display: inline;
+    position: relative;
+}
+
+.expand-btn:hover {
+    cursor: pointer;
+}
+
+.color-change {
+    width: 30px;
+    position: relative;
+}
+
+.color-change:hover {
+    cursor: pointer;
+}
+
+.color-palette {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    bottom: 30px;
+}
+
+.color-palette:hover {
+    cursor: pointer;
+}
+
+.control-panel {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.check-mark {
+    width: 30px;
+    display: inline;
+    position: relative;
+}
+
+.check-mark:hover {
+    cursor: pointer;
+}
+
+.trash-can {
+    width: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+}
+
+.trash-can:hover {
+    cursor: pointer;
+}
